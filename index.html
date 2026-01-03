@@ -1,259 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Isabella Stewart | Financial Executive & Entrepreneur</title>
-<meta name="description" content="Isabella Stewart – Wharton MBA, CFA/FRM, Financial Executive, Entrepreneur, Luxury Jewelry Founder, Regulatory Risk Expert.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Isabella Stewart | Financial Executive & Entrepreneur</title>
 
-<style>
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-  background:#f6f7f9;
-  margin:0;
-  color:#1f1f1f;
-}
-.container{
-  max-width:1200px;
-  margin:40px auto;
-  background:#fff;
-  padding:48px;
-  border-radius:18px;
-  box-shadow:0 30px 80px rgba(0,0,0,.08);
-}
-.top{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.lang a{
-  margin-left:10px;
-  text-decoration:none;
-  font-weight:600;
-  color:#1a73e8;
-}
-.header{
-  display:flex;
-  gap:36px;
-  margin-top:30px;
-}
-.header img{
-  width:160px;height:160px;
-  border-radius:50%;
-  object-fit:cover;
-}
-h1{margin:0;font-size:36px}
-.subtitle{font-size:20px;color:#555;margin-top:6px}
-.location{color:#777;margin-top:6px}
+  <!-- SEO -->
+  <meta name="description" content="Isabella Stewart is a financial executive and entrepreneur with Wharton MBA and CFA/FRM background.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.actions a{
-  display:inline-block;
-  margin-top:14px;
-  margin-right:12px;
-  padding:10px 18px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
-}
-.primary{background:#1a73e8;color:#fff}
-.secondary{border:1px solid #ddd;color:#333}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
 
-.tabs{
-  display:flex;
-  gap:14px;
-  margin-top:50px;
-  flex-wrap:wrap;
-}
-.tab{
-  padding:10px 18px;
-  border-radius:999px;
-  border:1px solid #ddd;
-  cursor:pointer;
-  font-weight:600;
-  background:#fff;
-}
-.tab.active{
-  background:#1a73e8;
-  color:#fff;
-  border-color:#1a73e8;
-}
+  <style>
+    /* ---------- Global ---------- */
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #f5f6f8 0%, #eef0f3 100%);
+      color: #1f1f1f;
+    }
 
-.section{display:none;margin-top:40px}
-.section.active{display:block}
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-  gap:22px;
-}
-.card{
-  border:1px solid #eee;
-  border-radius:14px;
-  overflow:hidden;
-  cursor:pointer;
-}
-.card img{width:100%;height:160px;object-fit:cover}
-.card div{padding:14px}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.6);
-}
-.modal-content{
-  background:#fff;
-  max-width:700px;
-  margin:80px auto;
-  padding:30px;
-  border-radius:16px;
-}
-.close{float:right;cursor:pointer;font-weight:bold}
+    /* ---------- Container ---------- */
+    .container {
+      max-width: 860px;
+      margin: 64px auto;
+      background: #ffffff;
+      padding: 56px 56px 64px;
+      border-radius: 12px;
+      box-shadow:
+        0 1px 2px rgba(0,0,0,0.04),
+        0 8px 24px rgba(0,0,0,0.06);
+    }
 
-.ref{
-  border-left:4px solid #1a73e8;
-  padding-left:16px;
-  margin-bottom:24px;
-}
-.ref summary{font-weight:600;cursor:pointer}
+    /* ---------- Header ---------- */
+    .header {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
 
-.footer{
-  text-align:center;
-  margin-top:60px;
-  color:#aaa;
-}
-</style>
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: #555;
+    }
+
+    .location {
+      margin-top: 4px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* ---------- Language Toggle ---------- */
+    .lang-toggle {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    /* ---------- Sections ---------- */
+    section {
+      margin-top: 48px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e6e8eb;
+      margin: 24px 0;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #333;
+    }
+
+    /* ---------- Contact ---------- */
+    .contact a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* ---------- Work ---------- */
+    .job {
+      margin-bottom: 24px;
+    }
+
+    .job-title {
+      font-weight: 600;
+    }
+
+    .job-meta {
+      color: #777;
+      font-size: 14px;
+      margin: 4px 0 8px;
+    }
+
+    /* ---------- Projects ---------- */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .project-card {
+      border: 1px solid #e6e8eb;
+      border-radius: 10px;
+      padding: 16px;
+      cursor: pointer;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    /* ---------- Modal ---------- */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      max-width: 600px;
+      padding: 32px;
+      border-radius: 12px;
+    }
+
+    /* ---------- References ---------- */
+    .reference {
+      border: 1px solid #e6e8eb;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .reference button {
+      background: none;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .reference-content {
+      display: none;
+      margin-top: 12px;
+      color: #444;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 64px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
-<div class="container">
+  <div class="container">
 
-<div class="top">
-<div></div>
-<div class="lang">
-<a href="/cn/">中文</a>
-</div>
-</div>
+    <!-- Header -->
+    <div class="header">
+      <img src="avatar.jpg" alt="Isabella Stewart" class="avatar">
+      <div>
+        <h1>Isabella Stewart 伊莎贝拉·斯图尔特</h1>
+        <div class="subtitle">Financial Executive & Entrepreneur ｜ 财务高管 & 企业家</div>
+        <div class="location">San Francisco, United States ｜ 旧金山，美国</div>
+        <div class="lang-toggle">
+          <a href="#" onclick="setLang('en')">English</a> |
+          <a href="#" onclick="setLang('zh')">中文</a>
+        </div>
+      </div>
+    </div>
 
-<div class="header">
-<img src="assets/profile.jpg">
-<div>
-<h1>Isabella Stewart</h1>
-<div class="subtitle">Financial Executive & Entrepreneur</div>
-<div class="location">San Francisco, United States</div>
+    <!-- About -->
+    <section data-lang="en">
+      <h2>About</h2>
+      <hr>
+      <p>
+        A highly accomplished financial executive and entrepreneur, Isabella Stewart leverages a Wharton MBA and
+        dual CFA/FRM certifications to drive strategic growth and manage complex risks across finance, real estate,
+        and cryptocurrency markets.
+      </p>
+    </section>
 
-<div class="actions">
-<a class="primary" href="https://wa.me/12137913713" target="_blank">WhatsApp</a>
-<a class="secondary" href="https://www.facebook.com/Isabella.Stewart2354" target="_blank">Facebook</a>
-</div>
-</div>
-</div>
+    <section data-lang="zh" style="display:none;">
+      <h2>关于</h2>
+      <hr>
+      <p>
+        伊莎贝拉·斯图尔特是一位成就卓著的金融高管与企业家，拥有沃顿商学院 MBA 及 CFA / FRM 双重认证，
+        在传统金融、房地产及加密资产领域具备深厚的战略与风险管理能力。
+      </p>
+    </section>
 
-<div class="tabs">
-<div class="tab active" onclick="openTab('overview')">Overview</div>
-<div class="tab" onclick="openTab('about')">About</div>
-<div class="tab" onclick="openTab('projects')">Projects</div>
-<div class="tab" onclick="openTab('work')">Work</div>
-<div class="tab" onclick="openTab('education')">Education</div>
-<div class="tab" onclick="openTab('skills')">Skills</div>
-<div class="tab" onclick="openTab('refs')">References</div>
-</div>
+    <!-- Contact -->
+    <section>
+      <h2>Contact ｜ 联系方式</h2>
+      <hr>
+      <div class="contact">
+        <a href="https://wa.me/12137913713">WhatsApp: +1 (213) 791-3713</a>
+        <a href="https://www.facebook.com/Isabella.Stewart2354">Facebook: Isabella Stewart</a>
+      </div>
+    </section>
 
-<div id="overview" class="section active">
-<p>
-A highly accomplished financial executive and entrepreneur, Isabella Stewart leverages a Wharton MBA and dual CFA/FRM certifications to drive strategic growth and mitigate complex risks. With expertise spanning regulatory compliance at a major global bank and successful leadership of a luxury jewelry venture, she excels in traditional finance, real estate, and advanced cryptocurrency trading.
-</p>
-</div>
+    <!-- Work -->
+    <section>
+      <h2>Work Experience ｜ 工作经历</h2>
+      <hr>
 
-<div id="about" class="section">
-<p>
-Isabella consistently delivers profitability, innovates through data-driven strategies, and integrates social impact into her business endeavors.
-</p>
-</div>
+      <div class="job">
+        <div class="job-title">Garin Inc. Jewelry — Founder & CEO</div>
+        <div class="job-meta">Los Angeles, US ｜ Jan 2015 – May 2024</div>
+        <p>Founded and scaled a high-end luxury jewelry brand with sustained profitability.</p>
+      </div>
+    </section>
 
-<div id="projects" class="section">
-<div class="cards">
-<div class="card" onclick="openModal('Luxury Jewelry Expansion')">
-<img src="assets/project1.jpg">
-<div><strong>Luxury Jewelry Expansion</strong></div>
-</div>
-<div class="card" onclick="openModal('Crypto Investment Strategy')">
-<img src="assets/project2.jpg">
-<div><strong>Crypto Investment Strategy</strong></div>
-</div>
-<div class="card" onclick="openModal('Regulatory Risk Framework')">
-<img src="assets/project3.jpg">
-<div><strong>Regulatory Risk Framework</strong></div>
-</div>
-</div>
-</div>
+    <!-- Projects -->
+    <section>
+      <h2>Projects ｜ 项目</h2>
+      <hr>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openModal('Project A','Detailed description of Project A.')">
+          Project A
+        </div>
+        <div class="project-card" onclick="openModal('Project B','Detailed description of Project B.')">
+          Project B
+        </div>
+      </div>
+    </section>
 
-<div id="work" class="section">
-<h3>Garin Inc. Jewelry — Founder & CEO</h3>
-<p>2015 – 2024 · Los Angeles, California</p>
+    <!-- References -->
+    <section>
+      <h2>References ｜ 推荐信</h2>
+      <hr>
 
-<h3>Bank of America — Senior Director, Regulatory Risk Management</h3>
-<p>2010 – 2015 · Los Angeles, California</p>
-</div>
+      <div class="reference">
+        <button onclick="toggleRef(this)">Former Managing Director</button>
+        <div class="reference-content">
+          Isabella consistently demonstrated exceptional judgment, integrity, and leadership.
+        </div>
+      </div>
+    </section>
 
-<div id="education" class="section">
-<p><strong>Wharton School, University of Pennsylvania</strong><br>MBA – Financial Management & Markets</p>
-<p><strong>New York University</strong><br>Bachelor’s Degree – Business & Economics</p>
-</div>
+    <footer>
+      © 2026 Isabella Stewart
+    </footer>
 
-<div id="skills" class="section">
-<p>
-Financial Risk Management · Regulatory Compliance · Cryptocurrency Trading · Portfolio Management · Luxury Brand Strategy · Quantitative Investment
-</p>
-</div>
+  </div>
 
-<div id="refs" class="section">
-<details class="ref">
-<summary>Former Managing Director, Global Bank</summary>
-<p>
-“Isabella demonstrates exceptional strategic clarity, regulatory expertise, and leadership under complex financial environments.”
-</p>
-</details>
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3 id="modal-title"></h3>
+      <p id="modal-body"></p>
+      <br>
+      <a href="#" onclick="closeModal()">Close</a>
+    </div>
+  </div>
 
-<details class="ref">
-<summary>Private Equity Partner</summary>
-<p>
-“A rare combination of analytical rigor, entrepreneurial instinct, and ethical leadership.”
-</p>
-</details>
-</div>
+  <script>
+    function openModal(title, body) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-body').innerText = body;
+      document.getElementById('modal').style.display = 'flex';
+    }
 
-<div class="footer">
-© Isabella Stewart
-</div>
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
 
-</div>
+    function toggleRef(btn) {
+      const content = btn.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
 
-<div class="modal" id="modal">
-<div class="modal-content">
-<span class="close" onclick="closeModal()">✕</span>
-<h3 id="modalTitle"></h3>
-<p>
-Detailed project background, strategic objectives, execution methodology, and measurable outcomes are available upon request.
-</p>
-</div>
-</div>
-
-<script>
-function openTab(id){
-document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(id).classList.add('active');
-event.target.classList.add('active');
-}
-function openModal(title){
-document.getElementById('modalTitle').innerText=title;
-document.getElementById('modal').style.display='block';
-}
-function closeModal(){
-document.getElementById('modal').style.display='none';
-}
-</script>
-
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
