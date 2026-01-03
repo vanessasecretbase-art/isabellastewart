@@ -3,85 +3,124 @@
 <head>
 <meta charset="UTF-8">
 <title>Isabella Stewart | Financial Executive & Entrepreneur</title>
+<meta name="description" content="Isabella Stewart – Wharton MBA, CFA/FRM, Financial Executive, Entrepreneur, Luxury Jewelry Founder, Regulatory Risk Expert.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: #f7f7f7;
-    margin: 0;
-    padding: 0;
-    color: #222;
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+  background:#f6f7f9;
+  margin:0;
+  color:#1f1f1f;
 }
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+.container{
+  max-width:1200px;
+  margin:40px auto;
+  background:#fff;
+  padding:48px;
+  border-radius:18px;
+  box-shadow:0 30px 80px rgba(0,0,0,.08);
 }
-.header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
-.header img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #eee;
+.lang a{
+  margin-left:10px;
+  text-decoration:none;
+  font-weight:600;
+  color:#1a73e8;
 }
-h1 {
-    margin: 0;
-    font-size: 32px;
+.header{
+  display:flex;
+  gap:36px;
+  margin-top:30px;
 }
-.subtitle {
-    font-size: 18px;
-    color: #555;
-    margin-top: 6px;
+.header img{
+  width:160px;height:160px;
+  border-radius:50%;
+  object-fit:cover;
 }
-.location {
-    margin-top: 6px;
-    color: #777;
+h1{margin:0;font-size:36px}
+.subtitle{font-size:20px;color:#555;margin-top:6px}
+.location{color:#777;margin-top:6px}
+
+.actions a{
+  display:inline-block;
+  margin-top:14px;
+  margin-right:12px;
+  padding:10px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
 }
-.section {
-    margin-top: 40px;
+.primary{background:#1a73e8;color:#fff}
+.secondary{border:1px solid #ddd;color:#333}
+
+.tabs{
+  display:flex;
+  gap:14px;
+  margin-top:50px;
+  flex-wrap:wrap;
 }
-.section h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 8px;
-    font-size: 22px;
+.tab{
+  padding:10px 18px;
+  border-radius:999px;
+  border:1px solid #ddd;
+  cursor:pointer;
+  font-weight:600;
+  background:#fff;
 }
-p {
-    line-height: 1.7;
+.tab.active{
+  background:#1a73e8;
+  color:#fff;
+  border-color:#1a73e8;
 }
-ul {
-    padding-left: 20px;
+
+.section{display:none;margin-top:40px}
+.section.active{display:block}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:22px;
 }
-.contact a {
-    display: block;
-    color: #0066cc;
-    text-decoration: none;
-    margin: 6px 0;
+.card{
+  border:1px solid #eee;
+  border-radius:14px;
+  overflow:hidden;
+  cursor:pointer;
 }
-.contact a:hover {
-    text-decoration: underline;
+.card img{width:100%;height:160px;object-fit:cover}
+.card div{padding:14px}
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
 }
-.tag {
-    display: inline-block;
-    background: #f0f0f0;
-    padding: 6px 10px;
-    margin: 4px;
-    border-radius: 6px;
-    font-size: 14px;
+.modal-content{
+  background:#fff;
+  max-width:700px;
+  margin:80px auto;
+  padding:30px;
+  border-radius:16px;
 }
-.footer {
-    margin-top: 50px;
-    text-align: center;
-    color: #999;
-    font-size: 14px;
+.close{float:right;cursor:pointer;font-weight:bold}
+
+.ref{
+  border-left:4px solid #1a73e8;
+  padding-left:16px;
+  margin-bottom:24px;
+}
+.ref summary{font-weight:600;cursor:pointer}
+
+.footer{
+  text-align:center;
+  margin-top:60px;
+  color:#aaa;
 }
 </style>
 </head>
@@ -89,97 +128,132 @@ ul {
 <body>
 <div class="container">
 
-<!-- HEADER -->
+<div class="top">
+<div></div>
+<div class="lang">
+<a href="/cn/">中文</a>
+</div>
+</div>
+
 <div class="header">
-    <img src="profile.jpg" alt="Isabella Stewart">
-    <div>
-        <h1>Isabella Stewart 伊莎贝拉·斯图尔特</h1>
-        <div class="subtitle">Financial Executive & Entrepreneur<br>财务高管 & 企业家</div>
-        <div class="location">San Francisco, United States ｜ 旧金山，美国</div>
-    </div>
+<img src="assets/profile.jpg">
+<div>
+<h1>Isabella Stewart</h1>
+<div class="subtitle">Financial Executive & Entrepreneur</div>
+<div class="location">San Francisco, United States</div>
+
+<div class="actions">
+<a class="primary" href="https://wa.me/12137913713" target="_blank">WhatsApp</a>
+<a class="secondary" href="https://www.facebook.com/Isabella.Stewart2354" target="_blank">Facebook</a>
+</div>
+</div>
 </div>
 
-<!-- ABOUT -->
-<div class="section">
-<h2>About ｜ 关于</h2>
+<div class="tabs">
+<div class="tab active" onclick="openTab('overview')">Overview</div>
+<div class="tab" onclick="openTab('about')">About</div>
+<div class="tab" onclick="openTab('projects')">Projects</div>
+<div class="tab" onclick="openTab('work')">Work</div>
+<div class="tab" onclick="openTab('education')">Education</div>
+<div class="tab" onclick="openTab('skills')">Skills</div>
+<div class="tab" onclick="openTab('refs')">References</div>
+</div>
+
+<div id="overview" class="section active">
 <p>
-A highly accomplished financial executive and entrepreneur, Isabella Stewart leverages a Wharton MBA and dual CFA/FRM certifications to drive strategic growth and mitigate complex risks. With expertise spanning regulatory compliance at a major global bank and successful leadership of a luxury jewelry venture, she excels in traditional finance, real estate, and advanced cryptocurrency trading. Isabella consistently delivers profitability, innovates through data-driven strategies, and integrates social impact into her business endeavors.
+A highly accomplished financial executive and entrepreneur, Isabella Stewart leverages a Wharton MBA and dual CFA/FRM certifications to drive strategic growth and mitigate complex risks. With expertise spanning regulatory compliance at a major global bank and successful leadership of a luxury jewelry venture, she excels in traditional finance, real estate, and advanced cryptocurrency trading.
 </p>
+</div>
+
+<div id="about" class="section">
 <p>
-一位非常成功的金融高管和企业家，Isabella Stewart 利用沃顿商学院 MBA 以及 CFA / FRM 双认证推动战略增长并管理复杂风险。她曾在全球大型银行负责监管合规，并成功领导奢侈珠宝企业，擅长传统金融、房地产和高级加密货币交易。她始终以数据驱动创新，实现盈利，并将社会影响融入商业实践。
+Isabella consistently delivers profitability, innovates through data-driven strategies, and integrates social impact into her business endeavors.
 </p>
 </div>
 
-<!-- CONTACT -->
-<div class="section contact">
-<h2>Contact ｜ 联系方式</h2>
-<a href="https://wa.me/12137913713" target="_blank">📱 WhatsApp: +1 (213) 791-3713</a>
-<a href="https://www.facebook.com/Isabella.Stewart2354" target="_blank">📘 Facebook: Isabella Stewart</a>
+<div id="projects" class="section">
+<div class="cards">
+<div class="card" onclick="openModal('Luxury Jewelry Expansion')">
+<img src="assets/project1.jpg">
+<div><strong>Luxury Jewelry Expansion</strong></div>
+</div>
+<div class="card" onclick="openModal('Crypto Investment Strategy')">
+<img src="assets/project2.jpg">
+<div><strong>Crypto Investment Strategy</strong></div>
+</div>
+<div class="card" onclick="openModal('Regulatory Risk Framework')">
+<img src="assets/project3.jpg">
+<div><strong>Regulatory Risk Framework</strong></div>
+</div>
+</div>
 </div>
 
-<!-- WORK -->
-<div class="section">
-<h2>Work Experience ｜ 工作经历</h2>
-
+<div id="work" class="section">
 <h3>Garin Inc. Jewelry — Founder & CEO</h3>
-<p>Los Angeles, California, US ｜ Jan 2015 – May 2024</p>
-<ul>
-<li>Founded and led a high-end luxury jewelry brand specializing in bespoke designs.</li>
-<li>Drove strategic growth, market expansion, and sustained profitability.</li>
-<li>Oversaw end-to-end operations including design, production, quality control, and partnerships.</li>
-<li>Implemented data-driven cryptocurrency investment strategies to recover major losses and fund philanthropy.</li>
-</ul>
+<p>2015 – 2024 · Los Angeles, California</p>
 
 <h3>Bank of America — Senior Director, Regulatory Risk Management</h3>
-<p>Los Angeles, California, US ｜ Jun 2010 – Dec 2015</p>
-<ul>
-<li>Led regulatory risk management across a global financial institution.</li>
-<li>Designed robust risk control frameworks and market risk models.</li>
-<li>Managed compliance, asset-liability, and capital allocation strategies.</li>
-<li>Maintained direct engagement with regulatory authorities.</li>
-</ul>
+<p>2010 – 2015 · Los Angeles, California</p>
 </div>
 
-<!-- EDUCATION -->
-<div class="section">
-<h2>Education ｜ 教育</h2>
-<p><strong>Wharton School, University of Pennsylvania</strong><br>
-MBA — Financial Management & Financial Markets</p>
-
-<p><strong>New York University</strong><br>
-Bachelor’s Degree — Business & Economics</p>
+<div id="education" class="section">
+<p><strong>Wharton School, University of Pennsylvania</strong><br>MBA – Financial Management & Markets</p>
+<p><strong>New York University</strong><br>Bachelor’s Degree – Business & Economics</p>
 </div>
 
-<!-- CERTIFICATES -->
-<div class="section">
-<h2>Certificates ｜ 证书</h2>
-<ul>
-<li>CFA Level I, II, III — CFA Institute</li>
-<li>Financial Risk Manager (FRM) — GARP</li>
-</ul>
+<div id="skills" class="section">
+<p>
+Financial Risk Management · Regulatory Compliance · Cryptocurrency Trading · Portfolio Management · Luxury Brand Strategy · Quantitative Investment
+</p>
 </div>
 
-<!-- SKILLS -->
-<div class="section">
-<h2>Skills ｜ 技能</h2>
-<div>
-<span class="tag">Financial Risk Management</span>
-<span class="tag">Regulatory Compliance</span>
-<span class="tag">Cryptocurrency Trading</span>
-<span class="tag">Investment Analysis</span>
-<span class="tag">Real Estate Investment</span>
-<span class="tag">Strategic Planning</span>
-<span class="tag">Luxury Brand Management</span>
-<span class="tag">Data Analysis</span>
-<span class="tag">Machine Learning Models</span>
-<span class="tag">Leadership</span>
-</div>
+<div id="refs" class="section">
+<details class="ref">
+<summary>Former Managing Director, Global Bank</summary>
+<p>
+“Isabella demonstrates exceptional strategic clarity, regulatory expertise, and leadership under complex financial environments.”
+</p>
+</details>
+
+<details class="ref">
+<summary>Private Equity Partner</summary>
+<p>
+“A rare combination of analytical rigor, entrepreneurial instinct, and ethical leadership.”
+</p>
+</details>
 </div>
 
 <div class="footer">
-© Isabella Stewart · Financial Executive & Entrepreneur
+© Isabella Stewart
 </div>
 
 </div>
+
+<div class="modal" id="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">✕</span>
+<h3 id="modalTitle"></h3>
+<p>
+Detailed project background, strategic objectives, execution methodology, and measurable outcomes are available upon request.
+</p>
+</div>
+</div>
+
+<script>
+function openTab(id){
+document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+event.target.classList.add('active');
+}
+function openModal(title){
+document.getElementById('modalTitle').innerText=title;
+document.getElementById('modal').style.display='block';
+}
+function closeModal(){
+document.getElementById('modal').style.display='none';
+}
+</script>
+
 </body>
 </html>
