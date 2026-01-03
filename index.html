@@ -5,8 +5,6 @@
   <title>Isabella Stewart | Financial Executive & Entrepreneur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Isabella Stewart is a Financial Executive and Entrepreneur based in San Francisco, US. Wharton MBA with CFA and FRM certifications.">
-
   <style>
     body {
       margin: 0;
@@ -16,33 +14,66 @@
     }
 
     .container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: 40px auto;
       background: #ffffff;
       padding: 40px;
-      border-radius: 12px;
+      border-radius: 14px;
     }
 
-    h1 { margin-bottom: 5px; }
-    h2 { margin-top: 0; color: #555; font-weight: normal; }
-    h3 { margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
-    h4 { margin-top: 25px; margin-bottom: 5px; }
+    /* ===== 顶部结构：左右分栏 ===== */
+    .header {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
 
-    p { line-height: 1.6; }
+    .header-text {
+      flex: 1;
+      min-width: 300px;
+    }
 
-    ul { padding-left: 20px; }
+    .header-images {
+      width: 300px;
+    }
 
-    img {
-      max-width: 300px;
+    .header-images img {
       width: 100%;
-      display: block;
+      border-radius: 12px;
       margin-bottom: 20px;
-      border-radius: 10px;
+      display: block;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+      font-size: 32px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      color: #555;
+    }
+
+    h3 {
+      margin-top: 50px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
     }
 
     .meta {
-      color: #666;
       font-size: 14px;
+      color: #666;
       margin-bottom: 10px;
     }
 
@@ -51,102 +82,83 @@
       color: #0a66c2;
       font-weight: bold;
     }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+      }
+      .header-images {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
-    <h1>Isabella Stewart</h1>
-    <h2>Financial Executive & Entrepreneur</h2>
-    <p>San Francisco, US.</p>
+    <!-- ===== 顶部：文字 + 图片 ===== -->
+    <div class="header">
 
-    <!-- 社交验证链接 -->
-    <p class="social">
-      🔗 <a href="https://www.facebook.com/IsabellaStewart.19850" target="_blank">Facebook</a>
-      &nbsp;|&nbsp;
-      💬 <a href="https://wa.me/12137913713" target="_blank">WhatsApp</a>
-    </p>
+      <div class="header-text">
+        <h1>Isabella Stewart</h1>
+        <h2>Financial Executive & Entrepreneur</h2>
+        <p>San Francisco, US.</p>
 
-    <!-- 主头像 -->
-    <img src="images/isabella-stewart-financial-executive.jpg">
+        <p class="social">
+          🔗 <a href="https://www.facebook.com/IsabellaStewart.19850" target="_blank">Facebook</a>
+          &nbsp;|&nbsp;
+          💬 <a href="https://wa.me/12137913713" target="_blank">WhatsApp</a>
+        </p>
 
-    <h3>About</h3>
-    <p>
-      Experienced financial executive and entrepreneur with a robust background in regulatory risk management and strategic investment.
-      Leveraging a Wharton MBA and dual CFA/FRM certifications, I have successfully led financial compliance initiatives at a major bank
-      and founded a high-end jewelry company. My expertise spans traditional financial markets, real estate, and advanced cryptocurrency
-      trading, consistently driving profitability and fostering social impact through data-driven philanthropic strategies.
-    </p>
+        <h3>About</h3>
+        <p>
+          Experienced financial executive and entrepreneur with a robust background in regulatory risk management
+          and strategic investment. Leveraging a Wharton MBA and dual CFA/FRM certifications, I have successfully led
+          financial compliance initiatives at a major bank and founded a high-end jewelry company.
+        </p>
+      </div>
 
-    <h3>Professional Highlights</h3>
-    <img src="images/isabella-stewart-business-portrait.jpg">
-    <img src="images/isabella-stewart-finance-event.jpg">
-    <img src="images/isabella-stewart-professional.jpg">
+      <div class="header-images">
+        <img src="images/isabella-stewart-financial-executive.jpg">
+        <img src="images/isabella-stewart-business-portrait.jpg">
+        <img src="images/isabella-stewart-professional.jpg">
+      </div>
 
+    </div>
+
+    <!-- ===== 工作经历 ===== -->
     <h3>Work</h3>
 
     <h4>Garin Inc. Jewelry | Founder & CEO</h4>
     <div class="meta">Los Angeles, California, US · Jan 2015 → May 2024</div>
 
-    <p><strong>Summary</strong></p>
-    <p>
-      Founded and led Garin Inc. Jewelry, a boutique firm specializing in custom luxury designs, driving strategic growth and market expansion.
-    </p>
-
-    <p><strong>Highlights</strong></p>
     <ul>
-      <li>Established Garin Inc. as a high-end jewelry company, focusing on bespoke designs and unique craftsmanship for a discerning clientele.</li>
-      <li>Directed strategic planning, market expansion, and comprehensive financial management, ensuring sustained profitability and brand positioning in the luxury sector.</li>
-      <li>Oversaw all aspects of jewelry design and production, maintaining stringent quality standards and aesthetic excellence.</li>
-      <li>Cultivated robust relationships with key suppliers, retailers, and strategic partners, significantly expanding market reach and operational efficiency.</li>
-      <li>Managed company operations, including budget control, sales strategy, and human resource development, to support continuous growth.</li>
-      <li>Leveraged advanced investment strategies, including data-driven cryptocurrency trading, to recover from significant business losses and fund philanthropic initiatives.</li>
+      <li>Founded and led a high-end jewelry company specializing in bespoke luxury designs.</li>
+      <li>Directed strategic planning, market expansion, and comprehensive financial management.</li>
+      <li>Oversaw design, production, supplier relations, and operational growth.</li>
+      <li>Applied advanced investment strategies including cryptocurrency trading.</li>
     </ul>
 
     <h4>Bank of America | Senior Director, Regulatory Risk Management</h4>
     <div class="meta">Los Angeles, California, US · Jun 2010 → Dec 2015</div>
 
-    <p><strong>Summary</strong></p>
-    <p>
-      Progressed from intern to Senior Director, overseeing critical regulatory compliance and market risk functions for a leading global financial institution.
-    </p>
+    <ul>
+      <li>Led regulatory risk management and compliance for a global financial institution.</li>
+      <li>Designed market risk and asset-liability control frameworks.</li>
+      <li>Worked directly with regulatory authorities.</li>
+    </ul>
 
+    <!-- ===== 教育 ===== -->
     <h3>Education</h3>
-    <p>
-      <strong>Wharton School, University of Pennsylvania</strong><br>
-      MBA (Dual Degree), Financial Management & Financial Markets<br>
-      Sep 2005 → May 2007
-    </p>
+    <p><strong>Wharton School, University of Pennsylvania</strong><br>MBA · Financial Management & Markets</p>
+    <p><strong>New York University</strong><br>Bachelor’s Degree · Business & Economics</p>
 
-    <p>
-      <strong>New York University</strong><br>
-      Bachelor's Degree, Business & Economics (Inferred)<br>
-      Sep 2001 → May 2005
-    </p>
-
-    <h3>Languages</h3>
-    <ul>
-      <li>English</li>
-      <li>Polish</li>
-    </ul>
-
-    <h3>Certificates</h3>
-    <ul>
-      <li>CFA Level 3 — Jan 2014 (CFA Institute)</li>
-      <li>CFA Level 2 — Jan 2012 (CFA Institute)</li>
-      <li>Financial Risk Manager (FRM) — Jan 2009 (GARP)</li>
-      <li>CFA Level 1 — Jan 2009 (CFA Institute)</li>
-    </ul>
-
+    <!-- ===== 技能 ===== -->
     <h3>Skills</h3>
-    <p><strong>Financial Expertise</strong><br>
-      Financial Risk Management, Regulatory Compliance, Market Risk Analysis, Asset-Liability Management,
-      Capital Allocation, Financial Modeling, Investment Analysis, Cryptocurrency Trading, Portfolio Management.
-    </p>
-
-    <p><strong>Philanthropy & Social Impact</strong><br>
-      Charitable Giving, Social Responsibility, Community Development, Educational Programs, Healthcare Initiatives.
+    <p>
+      Financial Risk Management, Regulatory Compliance, Investment Analysis, Cryptocurrency Trading,
+      Strategic Planning, Luxury Brand Development, Data Analytics, Philanthropy.
     </p>
 
   </div>
